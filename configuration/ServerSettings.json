@@ -2,6 +2,12 @@
 	"servername": "nodejs-quote-api",
 	"port": 3000,
 	"usekeys": false,
+    "apikeys": [
+        {
+            "source": "f16eea44-74e2-46e1-800b-e9b34be82c34",
+            "key": "0f3992f3-7976-4b84-9c37-787283c37c5f"
+        }
+    ],
     "activeapiendpoints": {
         "getrandomquote": true,
         "getmotivationalquote": true,

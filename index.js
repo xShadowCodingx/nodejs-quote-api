@@ -1,7 +1,6 @@
 // Main Entry Point for the Quote API Server
 
 const serverSettings = require('./configuration/server_settings');
-
 const express = require('express');
 const app = express();
 
