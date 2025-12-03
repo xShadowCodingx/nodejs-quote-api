@@ -1,4 +1,4 @@
-// Quote Utility Methods
+// Quote Utility Class and Methods
 
 const fs = require('fs');
 
@@ -12,7 +12,7 @@ class QuoteUtil {
     // Get random category
     static getRandomCategory() {
         // Randomly choose what category (There are 6)
-        const randomNum = Math.floor(Math.random() * 6) + 1;
+        const randomNum = Math.floor(Math.random() * 7) + 1;
         let category = "";
         switch (randomNum) {
             case 1:
@@ -31,6 +31,9 @@ class QuoteUtil {
                 category = "Happiness";
                 break;
             case 6:
+                category = "Family";
+                break;
+            case 7:
                 category = "Funny";
                 break;
         };
