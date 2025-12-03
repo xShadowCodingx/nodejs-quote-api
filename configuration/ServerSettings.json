@@ -1,5 +1,16 @@
 {
 	"servername": "nodejs-quote-api",
 	"port": 3000,
-	"usekeys": false
+	"usekeys": false,
+    "activeapiendpoints": {
+        "getrandomquote": true,
+        "getmotivationalquote": true,
+        "getworkquote": true,
+        "getlifequote": true,
+        "getlovequote": true,
+        "gethappinessquote": true,
+        "getfamilyquote": true,
+        "getfunnyquote": true,
+        "404": true
+    }
 }

@@ -24,10 +24,10 @@ class ServerSettings {
         return settings.usekeys || false;
     };
 
-    static getSSLConfig() {
+    static getActiveEndpoints() {
         const settings = this.getSettings();
-        return settings.ssl || {};
-    };
+        return settings.activeapiendpoints || [];
+    }
 };
 
 module.exports = ServerSettings;

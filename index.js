@@ -25,6 +25,12 @@ app.use('/api/quote', happinessQuoteEndpoint);
 app.use('/api/quote', familyQuoteEndpoint);
 app.use('/api/quote', funnyQuoteEndpoint);
 
+// 404 Handler
+app.use((req, res) => {
+    res.status(404).json({ error: `404 - ${serverSettings.getServerName()} can't find that endpoint.` });
+});
+
+// Start Server
 app.listen(serverSettings.getPort(), () => {
     console.log(`${serverSettings.getServerName()} is running on port ${serverSettings.getPort()}`);
 });

@@ -40,3 +40,13 @@ You can find the following settings within the JSON file:
 - **servername**: This is the name of the API, you can change this to whatever you want to utilize.
 - **port**: This is the port the application will be listening for requests on.
 - **usekeys**: This option allows for API key useage. This will require API keys to be created and administered. The production variant of this project utilizes API keys for security and use reasons.
+- **activeapiendpoints**:
+- - *getrandomquote*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
+- - *getmotivationalquote*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
+- - *getworkquote*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
+- - *getlifequote*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
+- - *getlovequote*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
+- - *gethappinessquote*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
+- - *getfamilyquote*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
+- - *getfunnyquote*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
+- - *404*: Set to *true* allows for this endpoint to be used, *false* will disabled the endpoint.
