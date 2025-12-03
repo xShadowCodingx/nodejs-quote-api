@@ -1,0 +1,10 @@
+{
+	"servername": "nodejs-quote-api",
+	"port": 3000,
+	"usekeys": false,
+	"ssl": {
+		"enabled": false,
+		"keyPath": "",
+		"certPath": ""
+	}
+}

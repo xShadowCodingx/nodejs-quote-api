@@ -1,8 +1,9 @@
-const quoteUtil = require('./utilities/quote_util');
+// Main Entry Point for the Quote API Server
+
+const serverSettings = require('./configuration/server_settings');
 
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // Endpoint Imports
 const randomQuoteEndpoint = require('./endpoints/random_quote');
@@ -24,6 +25,6 @@ app.use('/api/quote', happinessQuoteEndpoint);
 app.use('/api/quote', familyQuoteEndpoint);
 app.use('/api/quote', funnyQuoteEndpoint);
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.listen(serverSettings.getPort(), () => {
+    console.log(`${serverSettings.getServerName()} is running on port ${serverSettings.getPort()}`);
 });
