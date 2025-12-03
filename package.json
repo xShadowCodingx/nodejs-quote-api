@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-quote-api",
+  "version": "1.0.0",
+  "description": "Quote api for generators or random quotes",
+  "keywords": [
+    "Quote",
+    "generator",
+    "api",
+    "fun",
+    "funny",
+    "node",
+    "nodejs",
+    "js",
+    "javascript",
+    "express",
+    "json"
+  ],
+  "homepage": "https://github.com/xShadowCodingx/nodejs-quote-api#readme",
+  "bugs": {
+    "url": "https://github.com/xShadowCodingx/nodejs-quote-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xShadowCodingx/nodejs-quote-api.git"
+  },
+  "license": "ISC",
+  "author": "Chase Quinn",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
