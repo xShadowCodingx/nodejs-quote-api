@@ -31,3 +31,12 @@ The different endpoints return different information based on which one is used.
 - **api/quote/happiness**: Returns the JSON value of a random happiness quote. This would have to be parsed on the front-end.
 - **api/quote/family**: Returns the JSON value of a random family quote. This would have to be parsed on the front-end.
 - **api/quote/funny**: Returns the JSON value of a random funny quote. This would have to be parsed on the front-end.
+
+### Server Settings
+
+Adjustable settings for the server can be found within */configuration/ServerSettings.json* file. After any changes, the server must be restarted unless using an auto-restart package like *nodemon* that changes on file save. This isn't a great option for production, however it works fine for development environments.
+
+You can find the following settings within the JSON file:
+- **servername**: This is the name of the API, you can change this to whatever you want to utilize.
+- **port**: This is the port the application will be listening for requests on.
+- **usekeys**: This option allows for API key useage. This will require API keys to be created and administered. The production variant of this project utilizes API keys for security and use reasons.
